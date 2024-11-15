@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://SG-amthucphuongnam-10871-mysql-master.servers.mongodirector.com:3306/cua_hang
+      - SPRING_DATASOURCE_USERNAME=sgroot
+      - SPRING_DATASOURCE_PASSWORD=j$JT2sPdtePGkRwV
